@@ -82,3 +82,32 @@ for(let key in student){
     console.log("key =",key,",value =",student[key]);
 }
 
+
+//template literal
+let object ={
+    item : "pen",
+    cost : 10,
+};
+let output = `The cost of ${object.item} is ${object.cost}`;
+console.log(output);
+
+let specialString = `this is template literal ${1+2+5}`;
+console.log(specialString);
+
+//string methods
+let str1 = "hello";
+let newstr = str.toUpperCase();
+let str2 = "cutu";
+let  result = "I am"+ str1 + str2;
+console.log(str1.concat(str2));
+console.log(str1.slice(3,));
+console.log(newstr);
+console.log(result);
+console.log(str2.replace("c","p"));
+console.log(str1.charAt(0));
+
+//Q. prompt a user to enter their fullname.generate a username based on imput. start with @,then full name and then end it with fullname length.
+let fullName = prompt("enter your fullname without spaces");
+
+let username = "@" + fullName + fullName.length;
+console.log(username);
