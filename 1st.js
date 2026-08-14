@@ -71,15 +71,15 @@ for(let val of str){
 console.log("string size =",size);
 
 //for-in-loop
-let student  = {
+let student1  = {
     name : "Sweety",
     theClass : 12,
     age : 19,
     // key : value (pair)
 };
 
-for(let key in student){
-    console.log("key =",key,",value =",student[key]);
+for(let key in student1){
+    console.log("key =",key,",value =",student1[key]);
 }
 
 
