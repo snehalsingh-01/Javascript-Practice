@@ -58,3 +58,27 @@ let age = 25;
 
 let result1 = age >= 18 ? "adult" : "not adult";
 console.log(result1);
+
+
+//for-of-loop
+let str = "toasty";
+let size = 0;
+
+for(let val of str){
+    console.log("value =",val);
+    size++;
+}
+console.log("string size =",size);
+
+//for-in-loop
+let student  = {
+    name : "Sweety",
+    theClass : 12,
+    age : 19,
+    // key : value (pair)
+};
+
+for(let key in student){
+    console.log("key =",key,",value =",student[key]);
+}
+
