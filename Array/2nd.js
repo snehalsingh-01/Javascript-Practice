@@ -46,3 +46,37 @@ for(i = 0; i < array.length; i++){
 for(let val of array){
     console.log(val);
 }
+
+// array methods
+let food = ["tomato","potato","onion","palak"];
+//push
+console.log(food);
+food.push("gobhi");
+console.log(food);
+
+//pop
+food.pop();
+console.log(food);
+
+//covert to string
+console.log(food.toString());
+
+let fruit = ["apple","litchi","kiwi"];
+//concat - adds array
+console.log(food.concat(fruit));
+
+//unshift
+fruit.unshift("mango");
+console.log(fruit);
+
+//shift
+fruit.shift("mango");
+console.log(fruit);
+
+//slice
+console.log(food.slice(2,));
+
+let arr = [1,2,3,4,5,6,7,8];
+//splice
+arr.splice(3,1,100)
+console.log(arr);
