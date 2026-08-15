@@ -80,3 +80,20 @@ let arr = [1,2,3,4,5,6,7,8];
 //splice
 arr.splice(3,1,100)
 console.log(arr);
+
+/*Q. Create an array to store companies → “Bloomberg”, “Microsoft”, “Uber”, “Google”, “IBM”, “Netflix”
+
+a. Remove the first company from the array.
+
+b. Remove Uber & add Ola in its place.
+
+c. Add Amazon at the end.*/
+
+let comp = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+comp.shift();
+console.log(comp);
+comp.splice(1,1,"Ola");
+console.log(comp);
+
+comp.push("Amazon");
+console.log(comp);
