@@ -32,3 +32,17 @@ let avengers = ["ironman","hulk","spiderman","thor","captain america"];
 for(let val of avengers){
     console.log(val.toUpperCase());
 }
+
+//Q. For a given array with prices of 5 items - [250, 645, 300, 900, 50].
+//All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.
+
+let array = [250,645,300,900,50];
+let offer = 0;
+for(i = 0; i < array.length; i++){
+    offer = array[i] / 10;
+    array[i] -= offer;
+}
+
+for(let val of array){
+    console.log(val);
+}
