@@ -47,3 +47,22 @@ const countV = (str) =>{
     return count1;
 }
 console.log(countV("apple"));
+
+//foreach loop in array
+let arr = ["Pune","Mumbai","Delhi","Hyderabad"];
+arr.forEach((val, idx, arr) => {
+    console.log(val, idx, arr);
+});
+
+//Q. For the given array of no.s, print the square of each value.
+let arr1 = [1, 2, 3, 4, 5];
+arr1.forEach((num) =>{
+    console.log(num*num);
+});
+
+//alternative method to write
+let squareN = arr1.forEach((num) =>{
+    console.log(num*num);
+});
+
+arr1.forEach(squareN);
