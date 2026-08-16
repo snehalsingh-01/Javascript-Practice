@@ -65,4 +65,32 @@ let squareN = arr1.forEach((num) =>{
     console.log(num*num);
 });
 
-arr1.forEach(squareN);
+console.log(squareN);
+
+//Array Methods
+//map
+
+let nums = [1,2,3,4,5];
+let newArr = nums.map((val) => {
+    console.log(val * 2);
+});
+
+//filter
+
+let newA = nums.filter((val) => {
+    return val % 2 === 0;
+});
+console.log(newA);
+
+//reduce
+
+const output = nums.reduce((prev,curr) => {
+    return curr + prev;
+})
+console.log(output);
+
+//finding the max/biggest num
+const outputt = nums.reduce((prev,curr) => {
+    return prev > curr ? prev : curr;
+})
+console.log(outputt);
