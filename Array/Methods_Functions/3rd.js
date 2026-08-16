@@ -22,3 +22,28 @@ const arrowMul = (a,b) =>{
     console.log(a*b);
 }
 arrowMul(7,5);
+
+//Q1.Create a function using the `function` keyword that takes a **String as an argument** and returns the **number of vowels in the string**.
+
+let count = 0;
+function countVowels(str){
+    for(const char of str){
+        if(char === "a"||char === "e"||char === "i"||char === "o"||char === "u"){
+            count ++;
+        }
+    }
+    return count;
+}
+console.log(countVowels("sweety"));
+//Q2.Create an **arrow function** to perform the **same task**.
+
+let count1=0;
+const countV = (str) =>{
+    for(const char of str){
+        if(char === "a"||char === "e"||char === "i"||char === "o"||char === "u"){
+            count1 ++;
+        }
+    }
+    return count1;
+}
+console.log(countV("apple"));
