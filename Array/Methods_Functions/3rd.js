@@ -16,3 +16,9 @@ function sum(x,y){// x,y are local variables
 }
 let val = sum(3,7);
 console.log(val);
+
+//arrow function
+const arrowMul = (a,b) =>{
+    console.log(a*b);
+}
+arrowMul(7,5);
