@@ -94,3 +94,28 @@ const outputt = nums.reduce((prev,curr) => {
     return prev > curr ? prev : curr;
 })
 console.log(outputt);
+
+//Q.Filter out marks by 90+
+let studentMarks = [77,90,86,84,91,99];
+let toppers =studentMarks.filter((val) => {
+    return val > 90;
+})
+console.log(toppers);
+
+//Q.
+let n = prompt("Enter any no :");
+let array = [];
+for(let i = 1; i <= n; i++){
+    array[i - 1] = i; // arr[0] = 1
+};
+console.log("The array =", array);
+
+const Sum = array.reduce((prev,curr) => {
+    return prev + curr;
+});
+const Fact = array.reduce((prev,curr) => {
+    return prev * curr;
+});
+
+console.log("Sum =", Sum);
+console.log("Factorial =", Fact);
