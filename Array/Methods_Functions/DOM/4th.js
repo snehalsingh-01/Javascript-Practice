@@ -40,3 +40,24 @@ console.dir(b);
 let c = document.querySelector("#Heading"); //access 1st element
 console.dir(c);
 
+console.dir(document.body.firstChild);
+console.dir(document.querySelector("div").children);
+
+//Q.Create a h2 element and append "xyz" to the text using JS.
+let h2 = document.querySelector("h2");
+console.dir(h2);
+console.dir(h2.innerText + "I am Sweety.");
+
+//Q.Create 3 divs with common class name.Access and add some text in it.
+let divs = document.querySelectorAll(".box");
+console.dir(divs);
+divs[0].innerText = ("I");
+divs[1].innerText = ("am");
+divs[2].innerText = ("Pretty :)");
+
+//OR
+let idx = 0
+for(div of divs){
+    div.innerText = "New value is ${idx}";
+    idx++;
+}
