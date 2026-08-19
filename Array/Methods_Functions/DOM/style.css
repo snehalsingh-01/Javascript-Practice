@@ -1,4 +1,4 @@
-h1 {
+#Heading {
     color: pink;
     font-family: sans-serif;
     background-color: grey;
@@ -9,4 +9,8 @@ body {
 button {
     color: white;
     background-color: cornflowerblue;
+}
+.context{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkslategray;
 }
