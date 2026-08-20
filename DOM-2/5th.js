@@ -1,6 +1,6 @@
 //Attributes
 
-/*let div = document.querySelector("div");
+let div = document.querySelector("div");
 console.log(div);
 
 let id = div.getAttribute("id");
@@ -39,9 +39,9 @@ document.querySelector("body").prepend(newHeading);
 
 //to remove elements
 newHeading.remove();
-*/
 
 
+/*
 //Q1. Create a new button element. Give it a text “click me”, background color of red & text color of white. Insert the button as the first element inside the <body> tag.
 let newBtn = document.createElement("button");
 newBtn.style.background = ("red");
@@ -54,3 +54,4 @@ document.querySelector("body").prepend(newBtn);
 let para = document.querySelector("p");
 para.classList.add("newClass");
 para.classList.remove("newClass");
+*/
