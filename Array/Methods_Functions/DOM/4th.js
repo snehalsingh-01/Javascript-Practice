@@ -58,6 +58,6 @@ divs[2].innerText = ("Pretty :)");
 //OR
 let idx = 0
 for(div of divs){
-    div.innerText = "New value is ${idx}";
+    div.innerText = `New value is ${idx}`;
     idx++;
 }
