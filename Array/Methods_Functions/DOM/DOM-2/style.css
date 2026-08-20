@@ -6,3 +6,10 @@
     border: 1px solid palevioletred;
     color: white;
 }
+.myClass {
+    color: cornflowerblue;
+    font-style: italic;
+}
+.newClass {
+    background-color: coral;
+}
