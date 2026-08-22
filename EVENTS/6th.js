@@ -10,8 +10,11 @@ btn1.onclick = () => {
 
 let btn2 = document.querySelector('#btn2');
 
-btn2.ondblclick = () => {
+btn2.ondblclick = (evt) => {
     console.log('This button was clicked 2x.');
+    console.log(evt);
+    console.log("Event Type =",evt.type);
+    console.log("Event Target =",evt.target);
 };
 
 let div = document.querySelector('div');
