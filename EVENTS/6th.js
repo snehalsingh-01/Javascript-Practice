@@ -48,3 +48,38 @@ let div = document.querySelector('div');
 div.onmouseover = () => {
    console.log('YOU ARE TOUCHING DIV!');
 };
+
+//Q.Create a toggle button that changes the theme when clicked.
+
+let modeBtn = document.querySelector(".mode");
+let currentMode = "light";
+
+/*modeBtn.addEventListener("click", () => {
+    if (currentMode === "light"){
+        document.querySelector("body").style.backgroundColor= "black";
+        currentMode = "dark";
+    }
+    else {
+        currentMode = "light";
+        document.querySelector("body").style.backgroundColor= "white";
+    }
+    console.log(currentMode);
+});*/
+
+//OR
+
+let body = document.querySelector("body");
+
+modeBtn.addEventListener("click", () => {
+    if (currentMode === "light"){
+        body.classList.add("dark");
+        body.classList.remove("light");
+        currentMode = "dark";
+    }
+    else {
+        currentMode = "light";
+        body.classList.add("light");
+        body.classList.remove("dark");
+    }
+    console.log(currentMode);
+})

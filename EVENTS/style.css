@@ -6,3 +6,9 @@ div{
     border: 1px solid palevioletred;
     color: white;
 }
+.dark{
+    background-color: black;
+}
+.light {
+    background-color: white;
+}
