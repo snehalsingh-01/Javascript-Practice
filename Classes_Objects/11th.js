@@ -1,3 +1,5 @@
+//Prototype & Object
+
 const student = { //object
     fullName : "Snehal Singh", //properties
     Marks : 9.4,
@@ -29,3 +31,27 @@ const karanArjun3 = {
 karanArjun.__proto__ = employee;
 karanArjun2.__proto__ = employee;
 karanArjun3.__proto__ = employee; //object2 prototype = object 1 
+
+//Classes
+
+class hyundaiCar {
+
+    constructor(brand, mileage) {
+        console.log('creating new objects');
+        this.brandName = brand;
+        this.mileage = mileage;
+    }
+    start() {
+        console.log ("start");
+    }
+
+    stop() {
+        console.log ('stop');
+    }
+    /*setBrand (brand) {
+        this.brandName = brand;
+    }*/
+};
+
+let venue = new hyundaiCar("Hyundai", 10);//constructor invokes
+console.log(venue);
