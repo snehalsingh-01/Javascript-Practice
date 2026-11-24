@@ -55,3 +55,30 @@ class hyundaiCar {
 
 let venue = new hyundaiCar("Hyundai", 10);//constructor invokes
 console.log(venue);
+
+//Inheritance
+class Parent {
+    hello(){
+        console.log('hello');
+    }
+}
+class child extends Parent{}
+let  obj = new child();
+
+class Person {
+    eat() {
+        console.log("eat");
+    }
+
+    sleep() {
+        console.log("sleep");
+    }
+}
+
+class Engineer extends Person {
+    work() {
+        console.log("solve problems, build something");
+    }
+}
+
+let sweetyObj = new Engineer();
