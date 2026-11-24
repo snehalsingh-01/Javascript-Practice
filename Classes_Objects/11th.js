@@ -66,6 +66,11 @@ class child extends Parent{}
 let  obj = new child();
 
 class Person {
+    constructor(fullName) {
+        console.log('enter parent const');
+        this.species = "insaan";
+        this.fullName = fullName;
+    }
     eat() {
         console.log("eat");
     }
@@ -76,9 +81,18 @@ class Person {
 }
 
 class Engineer extends Person {
+    constructor(branch,fullName) {
+        console.log('enter child const');
+        super(fullName); //Super Keyword, used to invoke parent class constructor
+        this.branch = branch;
+        console.log('exits child const');
+    }
     work() {
         console.log("solve problems, build something");
     }
 }
 
-let sweetyObj = new Engineer();
+let engObj = new Engineer( "Cse engineer ", "Sweety");
+
+
+
