@@ -20,3 +20,18 @@ function calculator(a, b, sumCallback) {
 
 calculator(1, 2, sum);//callback , calling a function into another function
 
+//callback hell
+function getData(dataId, getNextData){
+    setTimeout(() => {
+    console.log("Data",dataId)
+    if(getNextData){
+        getNextData();
+    }
+  },5000);
+}
+
+getData(1, ()=> { //callback hell
+    getData(2, () => {
+        getData(3);
+    });
+});
